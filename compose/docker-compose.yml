@@ -1,0 +1,30 @@
+name: octobus
+
+services:
+  news-analytics-service:
+    build:
+      context: ..                         # контекст — корень проекта (на уровень выше)
+      dockerfile: compose/Dockerfile
+    container_name: news-analytics-service
+    restart: unless-stopped
+    networks:
+      - dwh-net
+    dns:
+      - 192.168.1.10
+    volumes:
+      - ../config/config.yml:/app/config/config.yml:ro
+      - ../log:/app/log
+    environment:
+      - TZ=Europe/Moscow
+      - PYTHONUNBUFFERED=1
+    init: true
+    command: ["python", "news-analytics-service.py"]
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  dwh-net:
+    external: true

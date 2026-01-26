@@ -1,0 +1,13 @@
+[project]
+name = "news-analytics-service"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = [
+    "clickhouse-connect>=0.10.0",
+    "confluent-kafka[avro,schema-registry]>=2.13.0",
+    "google-genai>=1.51.0",
+    "httpx[socks]>=0.28.1",
+    "pydantic>=2.12.5",
+    "pyyaml>=6.0.3",
+]
