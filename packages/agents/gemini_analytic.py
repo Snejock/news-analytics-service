@@ -11,6 +11,10 @@ GMKN: MMC NORILSK NICKEL PJSC, ГМК Норникель, Norilsk Nickel (Metals
 SIBN: Gazprom Neft PJSC, Газпромнефть, Gazprom Neft (Energy, Oil)
 YDEX: IPJSC YANDEX, Яндекс, Yandex (Tech)
 TATN: TATNEFT n.a. V.D. Shashin, Татнефть, TATNEFT (Energy, Oil)
+X5: X5 Corporate Center, ИКС-5 Ритейл, X5 Retail Group (Retail)
+MGNT: Magnit PJSC, Магнит, MGNT Group (Retail)
+LENT: Lenta IPJSC, Лента, Lenta Group (Retail)
+OZON: OZON Holding PJSC, Озон, OZON Group (Retail)
 """
 
 SYSTEM_INSTRUCTION = """
